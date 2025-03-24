@@ -1,0 +1,223 @@
+/* Tablet Styles (landscape and portrait) */
+@media screen and (max-width: 1280px) {
+    h1,
+    h2 {
+        font-size: 3rem;
+    }
+
+
+    .nomLogo {
+        font-size: 2vw;
+    }
+
+    .menu {
+        width: 50%;
+    }
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        background-color: #f1f1f1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    /* Fermer le menu lorsqu'un lien est cliqué */
+    .menu-toggle:checked ~ .menu a:focus {
+        outline: none;
+    }
+
+    .menu-toggle:checked ~ .menu a:active {
+        background-color: #e0e0e0;
+    }
+
+    .menu-toggle:checked ~ .menu a:active ~ .menu {
+        display: none;
+    }
+    .landing h1 {
+        font-size: 5rem;
+    }
+
+    .avantage {
+        width: 100%;
+    }
+
+    .containerAvantages {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .first,
+    .second,
+    .third {
+        grid-area: auto;
+    }
+    .grids img{
+        width: 100%;
+    }
+    .containerCours {
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerOnglets {
+        width: 80%;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+        padding: 20px;
+        margin-top: 10%;
+    }
+
+    .container img {
+        max-width: 80%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .infoCours {
+        width: 100%;
+    }
+
+    .titreDesc h3 {
+        font-size: 1.5rem;
+    }
+    .filtres {
+        width: 60%;
+    }
+
+    .offresTarifs {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .filtresTarifs{
+        height: 2000px;
+    }
+    .pricing {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+/* Phone Styles */
+@media screen and (max-width: 600px) {
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    .nomLogo {
+        font-size: 3vw;
+    }
+
+    .menu {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .landing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing h1 {
+        font-size: 3rem;
+    }
+
+    .avantage {
+        width: 80%;
+    }
+
+    .containerAvantages {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .containerCours {
+        margin-top: 10%;
+        height: 100vh;
+    }
+
+    .containerOnglets {
+        width: 100%;
+
+    }
+
+    .ongletC {
+        padding: 2% 4%;
+    }
+
+    .container {
+        margin-top: 27%;
+        border-radius: 0;
+    }
+
+    .dd {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dd h4 {
+        margin-bottom: 10px;
+    }
+
+    .titreDesc h3 {
+        font-size: 1.2rem;
+    }
+
+    .filtres {
+        width: 80%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .filtre {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .pricing h4 {
+        font-size: 0.9rem;
+    }
+
+    .prix {
+        font-size: 1.2rem;
+        width: 150px;
+        height: 60px;
+    }
+}
