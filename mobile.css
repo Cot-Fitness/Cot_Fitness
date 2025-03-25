@@ -1,5 +1,6 @@
 /* Tablet Styles (landscape and portrait) */
 @media screen and (max-width: 1280px) {
+
     h1,
     h2 {
         font-size: 3rem;
@@ -13,6 +14,7 @@
     .menu {
         width: 50%;
     }
+
     .menu-toggle {
         display: none;
     }
@@ -41,22 +43,23 @@
         padding: 10px 0;
     }
 
-    .menu-toggle:checked ~ .menu {
+    .menu-toggle:checked~.menu {
         display: flex;
     }
 
     /* Fermer le menu lorsqu'un lien est cliqué */
-    .menu-toggle:checked ~ .menu a:focus {
+    .menu-toggle:checked~.menu a:focus {
         outline: none;
     }
 
-    .menu-toggle:checked ~ .menu a:active {
+    .menu-toggle:checked~.menu a:active {
         background-color: #e0e0e0;
     }
 
-    .menu-toggle:checked ~ .menu a:active ~ .menu {
+    .menu-toggle:checked~.menu a:active~.menu {
         display: none;
     }
+
     .landing h1 {
         font-size: 5rem;
     }
@@ -66,18 +69,31 @@
     }
 
     .containerAvantages {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .first,
-    .second,
-    .third {
-        grid-area: auto;
+    .grids {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        height: 400px;
     }
-    .grids img{
-        width: 100%;
+
+    .grids p {
+        height: 120px;
+        width: 260px;
+        font-size: 1rem;
     }
+
+    .grids img {
+        object-fit: cover;
+        height: 260px;
+        width: 260px;
+    }
+
     .containerCours {
         height: 1000px;
         flex-direction: column;
@@ -110,6 +126,7 @@
     .titreDesc h3 {
         font-size: 1.5rem;
     }
+
     .filtres {
         width: 60%;
     }
@@ -120,9 +137,11 @@
         width: 100%;
 
     }
-    .filtresTarifs{
+
+    .filtresTarifs {
         height: 2000px;
     }
+
     .pricing {
         width: 80%;
         margin-bottom: 20px;
@@ -130,9 +149,26 @@
 
 
 }
+@media screen and (max-width: 850px) {
 
+    .grids {
+        width: 90%;
+        height: 260px;
+    }
+
+    .grids p {
+        height: 80px;
+        width: 160px;
+    }
+
+    .grids img {
+        height: 160px;
+        width: 160px;
+    }
+}
 /* Phone Styles */
 @media screen and (max-width: 600px) {
+
     h1,
     h2 {
         font-size: 2rem;
@@ -166,6 +202,16 @@
     .containerAvantages {
         margin-top: 10%;
         margin-bottom: 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .grids{
+        flex-direction: row;
+        height: 160px;
+    }
+    .grids p{
+        font-size: 0.8rem;
     }
 
     .containerCours {

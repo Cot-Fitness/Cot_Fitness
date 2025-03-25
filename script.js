@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
         prices.forEach(price => {
             let basePrice = parseInt(price.textContent); // Récupérer le prix de base à partir de l'attribut data
             if (checkbox.checked) {
-                price.textContent = (basePrice + 5) + '€/mois';
+                price.textContent = (basePrice + 10) + '€/mois';
                 price.classList.add("CourCoDes");
             } else {
-                price.textContent = (basePrice - 5 ) + '€/mois';
+                price.textContent = (basePrice - 10 ) + '€/mois';
                 price.classList.remove("CourCoDes") // Restaurer le prix de base
             }
         });
