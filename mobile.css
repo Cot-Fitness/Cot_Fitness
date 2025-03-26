@@ -139,8 +139,9 @@
     }
 
     .filtresTarifs {
-        height: 2000px;
+        height: 1700px;
     }
+
 
     .pricing {
         width: 80%;
@@ -265,5 +266,21 @@
         font-size: 1.2rem;
         width: 150px;
         height: 60px;
+    }
+
+
+    .lieuxInfo{
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: space-around;
+    }
+    .lieuxInfo iframe{
+        width: 95%;
+    }
+    .infoContainer{
+        width: 95%;
+    margin-bottom: 5%;}
+    .lienContact{
+        display: flex;
     }
 }

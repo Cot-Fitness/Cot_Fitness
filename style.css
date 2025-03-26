@@ -23,8 +23,15 @@ h2 {
     text-transform: uppercase;
 }
 h2{
-    margin: 4%;
+    margin: 5%;
+    padding: 2%;
+    border-bottom: #1A1B1A solid 7px; 
 }
+.bBackground h2 {
+    border-bottom: #f1f1f1 solid 7px;     
+}
+
+
 a {
     text-decoration: none;
     color: #1A1B1A;
@@ -142,15 +149,6 @@ header .logo img {
     flex-direction: column;
 }
 
-.avantage {
-    align-self: flex-end;
-    color: #1A1B1A;
-    width: 35%;
-    border-radius: 50px;
-    text-align: center;
-    background: #f1f1f1;
-}
-
 .containerAvantages {
     margin:0 auto;
     margin-top: 5%;
@@ -185,39 +183,42 @@ header .logo img {
 
 /* espace cours onglet*/
 
-
-.containerCours {
-    height: 900px;
-    position: relative;
+.cours{
     margin: 0 auto;
     max-width: 1280px;
-    width: 100vw;
+    margin-bottom: 5%;
+}
+.containerCours {
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
     display: flex;   
 }
 .containerOnglets {
     width: 100%;
     height: 50px;
     display: flex;
-    gap: 1%;
+    gap: 0.5%;
     flex-wrap: wrap;
 }
 
 .ongletC {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    background: rgb(255, 255, 255);
+    box-shadow: 4px 4px 50px  #1a1b1a25;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 5px;
-    padding: 1% 2%;
+    padding: 1% 2%; 
+    transition: ease 300ms;
 }
-
-
 .activeOnglet {
     background-color: #F4D447;
     font-weight: 900;
 }
+
+
 .container {
     z-index: -1;
     margin-top: 5%;
@@ -225,13 +226,12 @@ header .logo img {
     opacity: 0;
     display: flex;
     max-width: 1280px;
-    max-height: 620px;
     height: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
-    box-shadow: 1px 1px 38px 1px rgba(115, 115, 115, 0.178);
+    background: rgb(255, 255, 255);
 }
 
 .container img {
@@ -281,7 +281,16 @@ header .logo img {
 }
 
 /* espace tarifs onglet*/
-
+.tarifs{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.tarifs h2{
+    margin-top: 25%;
+}
 .containerTarifs {
     max-width: 1280px;
     margin: 0 auto;
@@ -487,3 +496,23 @@ header .logo img {
     transform: translateY(0);
 }
 
+/* section lieux maps contact */
+
+.lieux{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.lieuxInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.infoContainer{
+    width: 50%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
