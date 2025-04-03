@@ -187,13 +187,18 @@ header .logo img {
     margin: 0 auto;
     max-width: 1280px;
     margin-bottom: 5%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .containerCours {
     height: 600px;
     position: relative;
     margin: 0 auto;
     width: 100%;
-    display: flex;   
+
 }
 .containerOnglets {
     width: 100%;
@@ -212,6 +217,7 @@ header .logo img {
     border-radius: 5px;
     padding: 1% 2%; 
     transition: ease 300ms;
+    user-select: none;
 }
 .activeOnglet {
     background-color: #F4D447;

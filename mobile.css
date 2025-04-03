@@ -221,12 +221,15 @@
     }
 
     .containerOnglets {
-        width: 100%;
-
+        width: 95%;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
     }
 
     .ongletC {
         padding: 2% 4%;
+        font-size: 0.8rem;
     }
 
     .container {
