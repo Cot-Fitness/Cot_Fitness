@@ -1,5 +1,5 @@
 /* Tablet Styles (landscape and portrait) */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1180px) {
 
     h1,
     h2 {
@@ -100,10 +100,10 @@
         align-items: center;
     }
 
-    .containerOnglets {
+ /*    .containerOnglets {
         width: 80%;
     }
-
+ */
     .container {
         flex-direction: column;
         height: auto;
@@ -114,7 +114,7 @@
 
     .container img {
         max-width: 80%;
-        height: auto;
+        height: 350px;
         margin-left: 0;
         margin-bottom: 20px;
     }
@@ -150,6 +150,7 @@
 
 
 }
+
 @media screen and (max-width: 850px) {
 
     .grids {
@@ -167,6 +168,7 @@
         width: 160px;
     }
 }
+
 /* Phone Styles */
 @media screen and (max-width: 600px) {
 
@@ -207,19 +209,22 @@
         justify-content: center;
         align-items: center;
     }
-    .grids{
+
+    .grids {
         flex-direction: row;
         height: 160px;
     }
-    .grids p{
+
+    .grids p {
         font-size: 0.8rem;
     }
 
     .containerCours {
-        margin-top: 10%;
-        height: 100vh;
+        height: 150%;
     }
-
+    .container img{
+        height: 250px;
+    }
     .containerOnglets {
         width: 95%;
         gap: 5px;
@@ -233,8 +238,9 @@
     }
 
     .container {
-        margin-top: 27%;
+        margin-top: 10vh;
         border-radius: 0;
+        font-size: 0.8rem;
     }
 
     .dd {
@@ -272,18 +278,41 @@
     }
 
 
-    .lieuxInfo{
+    .lieuxInfo {
         display: flex;
         flex-flow: wrap column;
         justify-content: space-around;
     }
-    .lieuxInfo iframe{
+
+    .lieuxInfo iframe {
         width: 95%;
     }
-    .infoContainer{
+
+    .infoContainer {
+        margin: 0 auto;
         width: 95%;
-    margin-bottom: 5%;}
-    .lienContact{
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .lienContact {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .containerCours {
+        height: 150%;
+    }
+    .container img{
+        height: 160px;
+    }
+
+    .dd{
+        flex-direction: row;
+    }
+    .ajoutCoursCo {
+        width: 90%;
     }
 }
