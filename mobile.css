@@ -118,7 +118,9 @@
         margin-left: 0;
         margin-bottom: 20px;
     }
-
+    .dd{
+        flex-direction: row;
+    }
     .infoCours {
         width: 100%;
     }
@@ -244,7 +246,7 @@
     }
 
     .dd {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
