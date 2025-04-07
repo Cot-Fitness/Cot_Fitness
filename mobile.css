@@ -247,7 +247,7 @@
 
     .dd {
         flex-direction: row;
-        align-items: center;
+        margin-top: 2%;
     }
 
     .dd h4 {
