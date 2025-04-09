@@ -95,7 +95,6 @@
     }
 
     .containerCours {
-        height: 1000px;
         flex-direction: column;
         align-items: center;
     }
@@ -109,7 +108,6 @@
         height: auto;
         max-height: none;
         padding: 20px;
-        margin-top: 10%;
     }
 
     .container img {
@@ -130,23 +128,31 @@
     }
 
     .filtres {
-        width: 60%;
+        width: 80%;
+        flex-direction: row;
     }
 
     .offresTarifs {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        gap: 20px;
         width: 100%;
-
+        margin: 0 auto;
+        font-size: 0.9rem;
     }
+    
 
     .filtresTarifs {
-        height: 1700px;
+        height: 100vh;
+    }
+    .prix{
+        font-size: 1.2rem;
+        align-self: center;
     }
 
-
     .pricing {
-        width: 80%;
+        width: 40%;
         margin-bottom: 20px;
     }
 
@@ -260,8 +266,8 @@
 
     .filtres {
         width: 80%;
-        flex-direction: column;
-        height: auto;
+        flex-direction:row;
+        height: 60px;
     }
 
     .filtre {

@@ -17,7 +17,7 @@ h1,h2 {
 	text-transform: uppercase;
 }
 h2 {
-	margin: 5%;
+	margin: 1%;
 	padding: 2%;
 	border-bottom: #1A1B1A solid 7px;
 }
@@ -361,7 +361,7 @@ header .logo img {
 	transition: ease 300ms;
 }
 .option{
-	margin-bottom: 5%;
+	margin-top: 2%;
 }
 .ajoutCoursCo {
 	position: relative;
@@ -372,11 +372,14 @@ header .logo img {
 	margin-bottom: 5%;
 	padding: 1%;
 	border: 1px solid #f1f1f1;
+	border-radius: 5px;
 }
+
 .checkItem {
 	position: relative;
 }
 .ajoutCoursCo {
+	margin-top: 2%;
 	width: 360px;
 }
 .ajoutCoursCo input[type="checkbox"] {
@@ -387,16 +390,9 @@ header .logo img {
 	color: #1e1e1e;
 	font-size: 30px;
 	font-weight: 700;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	-webkit-box-shadow: 0px 3px 10px 0px rgba(16, 16, 16, 0.5);
-	-moz-box-shadow: 0px 3px 10px 0px rgba(16, 16, 16, 0.5);
-	box-shadow: 0px 3px 10px 0px rgba(16, 16, 16, 0.5);
 }
 .activFT {
 	opacity: 1;
@@ -405,7 +401,7 @@ header .logo img {
 .FAQ {
 	max-width: 1280px;
 	margin: 0 auto;
-	margin-bottom: 10%;
+	margin-bottom: 2%;
 }
 .faq-item {
 	margin-bottom: 15px;
@@ -464,42 +460,70 @@ header .logo img {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	max-width: 1280px;
+	margin-bottom: 2%;
 }
 .infoContainer {
 	width: 50%;
 	height: 450px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+}
+.infoContainer p:nth-child(2){
+	margin-top: 5%;
 }
 
 footer{
     width: 100vw;
-    max-width: 1280px;
     background: #1A1B1A;
     color: #f1f1f1;
-    margin:0 auto
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 footer a{
     color: #f1f1f1;
 }
+.lienContact{
+	max-width: 1280px;
+	display: flex;
+}
+
+svg{
+	height: 25px;
+	fill: white;
+	transition: 500ms ease;
+}
+svg:hover{
+	fill: #F4D447;
+}
+.nomMarque{
+	text-align: center;
+	background-color: #1A1B1A;
+	padding: 0.5%;
+	color: #F4D447;
+}
+.infoUtile{
+	display: flex;
+	justify-content: center;
+
+}
 
 
-.lienContact a:nth-child(1) {
-	color: blue;
-}
-.lienContact a:nth-child(2) {
-	color: purple;
-}
+/* code pour la partie mention */
 
 .mentionLegale{
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
     margin-top: 2%;
     max-width: 1280px;
 }
 .mentionLegale h1 {
     text-align: center;
+}
+.mentionLegale:nth-child(3){
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 .infoML h3{
     margin: 2%;
@@ -507,5 +531,4 @@ footer a{
 .infoSite span{
     display: flex;
     margin: 1% auto 1%;
-
 }
