@@ -147,6 +147,7 @@ header .logo img {
 .third {
 	grid-area: 3 / 1 / 4 / 2;
 }
+
 .grids img {
 	width: 100%;
 	border-radius: 20px;
