@@ -1,586 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cot Fitness, votre salle de remise en forme dans l'ain</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COT Fitness, votre salle de remise en forme dans l'Ain</title>
+    <meta
+      name="description"
+      content="Salle de sport à Saint-André-de-Corcy (Ain), ouverte de 6h à 22h. Cours collectifs, ambiance familiale, abonnements dès 25 €/mois."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <a href="index.html" class="logo">
-            <img src="Assets/LOGO COT FITNESS_Plan de travail 1.png" alt="logo_cotfitness">
-            <span class="nomLogo">COT FITNESS</span>
-        </a>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <nav class="menu">
-            <a href="index.html#1">Nos avantages</a>
-            <a href="index.html#2">Nos Cours</a>
-            <a href="index.html#3">Nos Tarifs</a>
+      <div class="wrap">
+        <a class="logo" href="#top"
+          ><img
+            src="Assets/LOGO%20COT%20FITNESS_Plan%20de%20travail%201.png"
+            alt=""
+            onerror="this.remove()"
+          />COT FITNESS</a
+        >
+        <nav aria-label="Navigation principale">
+          <a href="#avantages">La salle</a><a href="#cours">Cours</a
+          ><a href="#tarifs">Tarifs</a><a href="#contact">Contact</a>
         </nav>
-        <!--   <button class="cta">Rejoignez-nous</button> -->
+      </div>
     </header>
-    <div class="landing">
-        <video src="Assets/Séquence 01.mp4" autoplay muted loop></video>
-        <div class="content">
-            <h1 class="yellow">découvrez votre salle <br>de remise en forme</h1>
+
+    <main id="top">
+      <section class="hero">
+        <video autoplay muted loop playsinline aria-hidden="true">
+          <source src="Assets/S%C3%A9quence%2001.mp4" type="video/mp4" />
+        </video>
+        <div class="wrap">
+          <h1>Votre salle de remise en forme dans l'Ain</h1>
+          <p class="lead">
+            À Saint-André-de-Corcy, sur l'axe Lyon–Bourg-en-Bresse. Trois
+            espaces climatisés et une ambiance familiale.
+          </p>
+          <div class="cta">
+            <a class="btn p" href="#tarifs">Voir les tarifs</a
+            ><a class="btn o" href="#cours">Voir le planning des cours</a>
+          </div>
         </div>
-    </div>
-    <!--                                               ---LES AVANTAGES---                                                                          -->
-    <div class="bBackground">
-        <div class="avantages" id="1">
-            <h2>Nos avantages</h2>
-            <div class="containerAvantages">
-                <div class="grids first">
-                    <img src="Assets/cot fitness fond ecran.jpg" alt="images salle de sport salle en general vide" srcset="">
-                    <p class="gAvantages">
-                        Une salle ouverte de 6h à 22h, équipée de trois espaces climatisés pour votre confort.
-                    </p>
-                </div>
-                <div class="grids second">
-                    <img src="Assets/IMG_20240820_091438 1.png" alt="images salle de sport fond jaune avec rack à haltère" srcset="">
-                    <p class="gAvantages">
-                        Notre salle vous accueille dans une ambiance chaleureuse et familiale, ponctuée d'événements qui
-                        renforcent notre esprit de convivialité.
-                    </p>
-                </div>
-                <div class="grids third">
-                    <img src="Assets/20220425_194601.jpg" alt="images salle de sport sur les cours collecifs" srcset="">
-                    <p class="gAvantages">
-                        Avec tous nos abonnements, bénéficiez chaque semaine d’un cours collectif pour vous surpasser !
-                    </p>
-                </div>
-            </div>
+      </section>
 
+      <div class="facts">
+        <div class="wrap">
+          <ul>
+            <li><strong>6h – 22h</strong>7j/7, jours fériés compris</li>
+            <li>
+              <strong>Dès 30 €/mois</strong>selon votre profil et l'engagement
+            </li>
+            <li>
+              <strong>1 cours par semaine</strong>inclus dans tous les
+              abonnements
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
 
-
-
-    <div class="cours" id="2">
-        <h2>Nos cours</h2>
-        <div class="containerCours">
-            <div class="containerOnglets">
-                <div class="ongletC activeOnglet">Renforcement musculaires</div>
-                <div class="ongletC">Cardio boxing</div>
-                <div class="ongletC">Pilates</div>
-                <div class="ongletC">Mobilité</div>
-                <div class="ongletC">CAF</div>
-                <div class="ongletC">FIT DANCE</div>
-                <div class="ongletC">STEP</div>
-                <div class="ongletC">FULL BODY</div>
-            </div>
-
-            <!-- RENFORCEMENT MUSCULAIRE  -->
-            <div class="container activeInfoOnglet">
-                <img src="Assets/bruce-mars-gJtDg6WfMlQ-unsplash.jpg" alt="photo du cours" srcset="" class="item">
-                <div class="infoCours item">
-                    <div class="titreDesc item">
-                        <h3>Renforcement Musculaires</h3>
-                        <p class="description">Un cours collectif de renforcement musculaire combine échauffement,
-                            exercices variés (comme squats, fentes, gainage) et étirements.Il favorise la motivation,
-                            assure une exécution correcte des mouvements et améliore la force, l'endurance et la posture
-                            dans une ambiance conviviale et structurée</p>
-                    </div>
-
-                    <div class="dd item">
-                        <div class="dureeDays">
-                            <h4>Durée</h4>
-                            <p>45min-1h</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>COach</h4>
-                            <p>Coralie <br> Nicolas</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Jours</h4>
-                            <p>Lundi : 18h-19h <br>Mardi: 10h-11h</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- Cardio Boxing  --> <!-- devient cross training -->
-            <div class="container">
-                <img src="Assets/keeptonic-cardio-boxe.jpg" alt="photo du cours" srcset="" class="item">
-                <div class="infoCours item">
-                    <div class="titreDesc item">
-                        <h3>Cross training</h3>
-                        <p class="description">
-                            Le cardio boxing est une activité sportive dynamique qui combine des
-                            mouvements de boxe avec des exercices cardiovasculaires, sans combat direct. Elle vise à
-                            améliorer l'endurance, brûler des calories, et tonifier le corps tout en étant ludique et
-                            intense</p>
-                    </div>
-
-                    <div class="dd item">
-                        <div class="dureeDays">
-                            <h4>Durée</h4>
-                            <p>45min-1h</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>COach</h4>
-                            <p>Coralie</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Jours</h4>
-                            <p>Lundi : 18h-19h</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- PILATES -->
-            <div class="container">
-                <img src="Assets/cours-pilates-paris-14-pilates-paris.jpg" alt="photo du cours" srcset="" class="item">
-                <div class="infoCours item">
-                    <div class="titreDesc item">
-                        <h3>Pilates</h3>
-                        <p class="description">
-                            Le Pilates est une méthode d'entraînement physique qui
-                            combine renforcement musculaire, amélioration de la posture et travail de la souplesse. Elle
-                            se concentre sur le développement des muscles profonds, qui incluent
-                            les abdominaux, le plancher pelvien et les muscles du dos. Les principes clés incluent la
-                            concentration, le contrôle, le centrage, la précision, la fluidité et la respiration.</p>
-                    </div>
-
-                    <div class="dd item">
-                        <div class="dureeDays">
-                            <h4>Durée</h4>
-                            <p>45min-1h</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>COach</h4>
-                            <p>Nicolas <br> Hyacinthe</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Jours</h4>
-                            <p>Mardi : 09h-10h <br>Mardi: 19h-20h</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- MOBILITE -->
-            <div class="container">
-                <img src="Assets/IMG_2178-1200x600.jpg" alt="photo du cours" srcset="" class="item">
-                <div class="infoCours item">
-                    <div class="titreDesc item">
-                        <h3>Mobilité</h3>
-                        <p class="description">Une séance pour se détendre et prendre conscience de son corps.
-                            Un mix de mouvements de mobilité(amplitude articulaire), de strectching (assouplissement
-                            musculaire), de proprioception(équilibre) ainsi qu'un travaille sur la respiration.
-                            Un moment doux, pour vous et vous aider à reconnnecter votre corps et votre esprit.
-                        </p>
-                    </div>
-
-                    <div class="dd item">
-                        <div class="dureeDays">
-                            <h4>Durée</h4>
-                            <p>45min-1h</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>COach</h4>
-                            <p>Marion</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Jours</h4>
-                            <p>Mardi: 18h-19h</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- CAF -->
-            <div class="container">
-                <img src="Assets/bruce-mars-gJtDg6WfMlQ-unsplash.jpg" alt="photo du cours" srcset="" class="item">
-                <div class="infoCours item">
-                    <div class="titreDesc item">
-                        <h3>CAF(cuisses, abdo, fessiers)</h3>
-                        <p class="description">
-                            Un cours collectif de renforcement musculaire ciblant le bas du corps combine échauffement,
-                            exercices variés (comme squats, fentes, gainage) et étirements.
-                        </p>
-                    </div>
-
-                    <div class="dd item">
-                        <div class="dureeDays">
-                            <h4>Durée</h4>
-                            <p>45min-1h</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Coach</h4>
-                            <p>Marion
-                                <br>
-                                Coralie
-                            </p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Jours</h4>
-                            <p>Mardi : 19h-20h
-                                <br>
-                                Jeudi: 10h-11h
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- FIT DANCES -->
-            <div class="container">
-                <img src="Assets/bruce-mars-gJtDg6WfMlQ-unsplash.jpg" alt="photo du cours" srcset="" class="item">
-                <div class="infoCours item">
-                    <div class="titreDesc item">
-                        <h3>FIT DANCE</h3>
-                        <p class="description">Une séance pour bouger et se dynamiser.
-                            Un mix de mouvements de danse rythmés (cardio et coordination), de mouvements dynamiques
-                            (tonification musculaire), de jeux de rythme (expression corporelle) ainsi qu'un travail sur
-                            l'énergie et la motivation.
-                            Un moment énergique, pour vous et vous aider à libérer votre énergie et vous amuser.</p>
-                    </div>
-
-                    <div class="dd item">
-                        <div class="dureeDays">
-                            <h4>Durée</h4>
-                            <p>45min-1h</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Coach</h4>
-                            <p>Tiffany</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Jours</h4>
-                            <p>Mercredi : 18h-19h</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- STEP -->
-            <div class="container">
-                <img src="Assets/bruce-mars-gJtDg6WfMlQ-unsplash.jpg" alt="photo du cours" srcset="" class="item">
-                <div class="infoCours item">
-                    <div class="titreDesc item">
-                        <h3>STEP</h3>
-                        <p class="description">
-                            Envie de bouger en rythme et de brûler un max de calories ? Le cours de STEP est fait pour
-                            vous ! Grâce à des enchaînements dynamiques sur une marche, vous boostez votre cardio,
-                            tonifiez vos jambes et améliorez votre coordination… le tout dans une ambiance motivante et
-                            musicale. Accessible à tous, c’est l’entraînement idéal pour se défouler tout en s’amusant.
-
-                        </p>
-                    </div>
-
-                    <div class="dd item">
-                        <div class="dureeDays">
-                            <h4>Durée</h4>
-                            <p>45min-1h</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Coach</h4>
-                            <p>Tiffany</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Jours</h4>
-                            <p>Mercredi : 19h-20h</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- FUll BODY -->
-            <div class="container">
-                <img src="Assets/bruce-mars-gJtDg6WfMlQ-unsplash.jpg" alt="photo du cours" class="item">
-                <div class="infoCours item">
-                    <div class="titreDesc item">
-                        <h3>FULL BODY</h3>
-                        <p class="description">Le cours de Full Body cible tous les muscles en une seule séance ! En
-                            combinant renforcement musculaire et cardio, vous gagnez en force, en tonus et en endurance.
-                            Accessible à tous niveaux, ce cours est parfait pour sculpter votre silhouette et booster
-                            votre énergie.</p>
-                    </div>
-
-                    <div class="dd item">
-                        <div class="dureeDays">
-                            <h4>Durée</h4>
-                            <p>45min-1h</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Coach</h4>
-                            <p>Hyacinthe</p>
-                        </div>
-                        <div class="dureeDays">
-                            <h4>Jours</h4>
-                            <p>Jeudi : 18h-19h</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+      <section id="avantages">
+        <div class="wrap">
+          <h2>Pourquoi venir chez COT Fitness</h2>
+          <div class="cards">
+            <article>
+              <img
+                src="Assets/cot%20fitness%20fond%20ecran.jpg"
+                alt="La salle de sport, vue d'ensemble"
+                loading="lazy"
+              />
+              <h3>Ouverte de 6h à 22h</h3>
+              <p>
+                Trois espaces climatisés pour vous entraîner confortablement,
+                tôt le matin comme tard le soir.
+              </p>
+            </article>
+            <article>
+              <img
+                src="Assets/IMG_20240820_091438%201.png"
+                alt="Rack à haltères de la salle"
+                loading="lazy"
+              />
+              <h3>Une ambiance familiale</h3>
+              <p>
+                Une salle chaleureuse, avec des événements réguliers qui
+                renforcent la convivialité.
+              </p>
+            </article>
+            <article>
+              <img
+                src="Assets/20220425_194601.jpg"
+                alt="Cours collectif en salle"
+                loading="lazy"
+              />
+              <h3>Un cours collectif par semaine</h3>
+              <p>
+                Inclus dans tous nos abonnements, pour se surpasser à plusieurs.
+              </p>
+            </article>
+          </div>
         </div>
-    </div>
+      </section>
 
-
-
-    <!--                                               ---LES TARIFS---                                                                          -->
-    <div class="bBackground ">
-
-        <div class="tarifs" id="3">
-            <h2>Nos Tarifs</h2>
-            <div class="containerTarifs">
-
-
-                <div class="filtres">
-                    <div class="filtre activF">Offre Seul</div>
-                    <div class="filtre">Offre Duo</div>
-                    <div class="filtre">Etudiant, <br>Policier, <br>pompier</div>
-                </div>
-
-                <div class="option">
-                    <h3 class="optionTitle">OPTION</h3>
-                    <div class="ajoutCoursCo">
-
-                        <input type="checkbox" name="cours co en ilitmité" id="CoursCo">
-                        <div> Cours collectifs en ilimités pour 10€/mois</div>
-                    </div>
-                </div>
-
-                <div class="filtresTarifs">
-                    <div class="offresTarifs activFT">
-                        <div class="pricing animItem">
-                            <h4>engagement 1 an</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">30€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>engagement 6 mois</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>-> 1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">35€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>engagement 3 mois</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">37€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>sans engagement</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">40€/mois</div>
-                        </div>
-                    </div>
-
-                    <div class="offresTarifs">
-                        <div class="pricing animItem">
-                            <h4>engagement 1 an</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">55€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>engagement 6 mois</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>-> 1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">65€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>engagement 3 mois</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">70€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>sans engagement</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">75€/mois</div>
-                        </div>
-                    </div>
-
-                    <div class="offresTarifs">
-                        <div class="pricing animItem">
-                            <h4>engagement 1 an</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">25€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>engagement 6 mois</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>-> 1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">30€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>engagement 3 mois</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix">32€/mois</div>
-                        </div>
-                        <div class="pricing animItem">
-                            <h4>sans engagement</h4>
-                            <div class="possibilites">
-                                <p>-> accès à la salle de 6h-22h</p>
-                                <p>->1 cours collectifs par semaine et au choix </p>
-                            </div>
-                            <div class="prix ">35€/mois</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+      <section id="cours">
+        <div class="wrap">
+          <h2>Le planning des cours</h2>
+          <div
+            class="tabs"
+            role="tablist"
+            aria-label="Jour de la semaine"
+            id="tabs"
+          ></div>
+          <div id="slots" role="tabpanel" aria-live="polite"></div>
+          <p class="note">
+            Tous les cours durent entre 45 min et 1 h. Touchez un cours pour
+            voir sa description.
+          </p>
         </div>
-    </div>
+      </section>
 
-    <div class="FAQ">
-
-        <h2>FOIRE à Questions</h2>
-
-        <div class="faq-item">
-            <input type="checkbox" id="faq1">
-            <label for="faq1">Quels sont vos horaires d'ouverture ?</label>
-            <div class="faq-content">
-                <p>Notre salle est ouverte du lundi au dimanche (et jours fériée) de 6h à 22h.</p>
-            </div>
+      <section id="tarifs">
+        <div class="wrap">
+          <h2>Nos tarifs</h2>
+          <div class="seg" role="radiogroup" aria-label="Profil">
+            <label
+              ><input type="radio" name="p" value="seul" checked /><span
+                >Offre seul</span
+              ></label
+            >
+            <label
+              ><input type="radio" name="p" value="duo" /><span
+                >Offre duo</span
+              ></label
+            >
+            <label
+              ><input type="radio" name="p" value="spe" /><span
+                >Étudiant, policier, pompier</span
+              ></label
+            >
+          </div>
+          <div class="plans" id="plans" aria-live="polite"></div>
+          <ul class="incl">
+            <li>Accès à la salle de 6h à 22h</li>
+            <li>1 cours collectif par semaine au choix</li>
+            <li>Option cours collectifs illimités : +10 €/mois</li>
+          </ul>
         </div>
+      </section>
 
-        <div class="faq-item">
-            <input type="checkbox" id="faq2">
-            <label for="faq2">Quels sont vos horaires de permanance ?</label>
-            <div class="faq-content">
-                <p>Nous sommes présent : <br>- du Lundi au Jeudi: 9h15 à 11h15/ 17h30 à 19h30 <br> - le vendredi : 14h30
-                    à 17h30 <br>- le samedi :10h00 à 12h00
-                </p>
-            </div>
+      <section id="faq">
+        <div class="wrap">
+          <h2>Questions fréquentes</h2>
+          <details class="q">
+            <summary>Quels sont vos horaires d'ouverture ?</summary>
+            <p>
+              La salle est ouverte tous les jours, jours fériés compris, de 6h à
+              22h.
+            </p>
+          </details>
+          <details class="q">
+            <summary>Quand puis-je rencontrer l'équipe ?</summary>
+            <p>
+              Pendant nos permanences : du lundi au jeudi de 9h15 à 11h15 et de
+              17h30 à 19h30, le vendredi de 14h30 à 17h30, le samedi de 10h à
+              12h.
+            </p>
+          </details>
+          <details class="q">
+            <summary>Proposez-vous des cours collectifs ?</summary>
+            <p>
+              Oui : renforcement musculaire, pilates, cardio boxing, step, fit
+              dance et plus encore. Consultez le planning ci-dessus.
+            </p>
+          </details>
+          <details class="q">
+            <summary>Comment m'inscrire ?</summary>
+            <p>
+              Directement à l'accueil de la salle pendant les permanences. Vous
+              pouvez aussi nous écrire à cot.fitness@orange.fr.
+            </p>
+          </details>
+          <details class="q">
+            <summary>Comment fonctionne l'abonnement ?</summary>
+            <p>
+              Les abonnements de 1 an, 6 mois ou 3 mois sont reconduits
+              tacitement à la fin de la période d'engagement. Vous n'êtes alors
+              plus tenu(e) par une durée minimale : l'abonnement reste actif et
+              se renouvelle automatiquement, sauf résiliation de votre part.
+            </p>
+          </details>
         </div>
+      </section>
 
-        <div class="faq-item">
-            <input type="checkbox" id="faq3">
-            <label for="faq3">Proposez-vous des cours collectifs ?</label>
-            <div class="faq-content">
-                <p>Oui, nous proposons une variété de cours collectifs incluant renforcement musculaire, pilate et
-                    d'autre. Consultez notre planning pour plus de détails.</p>
+      <section id="contact">
+        <div class="wrap contact">
+          <div>
+            <h2>Nous retrouver</h2>
+            <p>
+              Saint-André-de-Corcy, en face de la caserne des pompiers. Près de
+              la gare, et à 10 minutes en voiture de Villars-les-Dombes.
+            </p>
+            <ul class="perm" aria-label="Permanences">
+              <li>
+                <span>Lundi – jeudi</span><span>9h15–11h15 · 17h30–19h30</span>
+              </li>
+              <li><span>Vendredi</span><span>14h30–17h30</span></li>
+              <li><span>Samedi</span><span>10h–12h</span></li>
+            </ul>
+            <div class="cta">
+              <a class="btn p" href="mailto:cot.fitness@orange.fr"
+                >cot.fitness@orange.fr</a
+              ><a class="btn o" href="https://www.instagram.com/cot_fitness/"
+                >Instagram</a
+              ><a class="btn o" href="https://www.facebook.com/Cot.Fitness01"
+                >Facebook</a
+              >
             </div>
+          </div>
+          <iframe
+            title="Carte : COT Fitness à Saint-André-de-Corcy"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11667.826287891146!2d4.956776386010763!3d45.933429060088336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4bddb1d483c09%3A0x1566a9c20540e516!2sCOT%20FITNESS!5e1!3m2!1sfr!2sfr!4v1742979985414!5m2!1sfr!2sfr"
+          ></iframe>
         </div>
-
-        <div class="faq-item">
-            <input type="checkbox" id="faq4">
-            <label for="faq4">Comment puis-je m'inscrire ?</label>
-            <div class="faq-content">
-                <p>Vous pouvez vous inscrire directement à l'accueil de notre salle . N'hésitez pas à nous contacter
-                    pour plus d'informations.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <input type="checkbox" id="faq5">
-            <label for="faq5">Comment fonctionne le système d'abonnement ?</label>
-            <div class="faq-content">
-                <p>
-                    Nos abonnements (1 an, 6 mois ou 3 mois)
-                    Ils sont tacitement reconductibles à la fin de la période d’engagement.
-
-                    À savoir :
-
-                    À l’échéance de votre engagement initial, vous n’êtes plus tenu(e) par une durée minimale.
-
-                    Votre abonnement reste cependant actif sous contrat (sans nouvel engagement) et se renouvelle
-                    automatiquement, sauf résiliation de votre part.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- section maps et contact  -->
-    <div class="lieux">
-        <h2>nous retrouver</h2>
-        <div class="lieuxInfo">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11667.826287891146!2d4.956776386010763!3d45.933429060088336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4bddb1d483c09%3A0x1566a9c20540e516!2sCOT%20FITNESS!5e1!3m2!1sfr!2sfr!4v1742979985414!5m2!1sfr!2sfr"
-                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="infoContainer">
-                <p>Retrouvez notre salle de sport située à Saint-André-de-Corcy, dans l'Ain, sur l'axe
-                    Lyon-Bourg-en-Bresse. Située en face de la caserne des pompiers, notre salle offre un
-                    emplacement pratique et sécurisé.Proche de la gare de Saint-André-de-Corcy et à
-                    10 minutes en voiture de Villars-les-Dombes.
-                </p>
-                <p>
-                    Nos permanances sont:
-
-                    <br><strong>Du lundi au jeudi : </strong>9h15 à 11h15 / 17h30 à 19h30
-
-                    <br><strong>Le vendredi :</strong> 14h30 à 17h30
-
-                    <br><strong>Le samedi :</strong> 10h00 à 12h00
-                </p>
-            </div>
-        </div>
-
-
-    </div>
-
+      </section>
+    </main>
 
     <footer>
-        <div class="lienContact">
-            <a href="https://www.facebook.com/Cot.Fitness01">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path
-                        d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z">
-                    </path>
-                </svg>
-            </a>
-            <a href="https://www.instagram.com/cot_fitness/">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-                    <path
-                        d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
-                    </path>
-                </svg>
-            </a>
-        </div>
-        <div class="mail">
-            <a href="#">cot.fitness@orange.fr</a>
-        </div>
-
+      <div class="wrap">
+        <span>© 2026 COT Fitness. Tous droits réservés.</span>
+        <span
+          ><a href="mention.html#mLegale">Mentions légales</a> ·
+          <a href="mention.html#rgpd">RGPD</a> ·
+          <a href="mention.html#rgpd">Conditions générales de vente</a></span
+        >
+      </div>
     </footer>
-    <div class="nomMarque">@COT_FITNESS 2025 - Tout droit reservé</div>
-    <div class="infoUtile">
-        <a href="mention.html#mLegale">Mention légale -</a>
-        <a href="mention.html#rgpd">RGPD -</a>
-        <a href="mention.html#rgpd">Condition Générale de Vente</a>
-    </div>
-
-
-
-
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
